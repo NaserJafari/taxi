@@ -22,7 +22,7 @@
 
             <div class="space-y-4">
                 <h3 class="text-lg font-semibold text-gray-800">User Information</h3>
-                <p><span class="font-semibold text-gray-600">Gebruiker:</span> {{ $ride->user->name }}</p>
+                <p><span class="font-semibold text-gray-600">Gebruiker:</span> {{ $ride->user->firstname }}</p>
             </div>
 
             <div class="space-y-4">

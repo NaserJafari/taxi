@@ -77,14 +77,6 @@ class RideController extends Controller
         return view('user.rides.create');
     }
 
-    public function ride($id)
-    {
-        $ride = Rides::findOrFail($id);
-
-        return view('user.ride.ride', compact('ride'));
-    }
-
-
     /**
      * Store a newly created resource in storage.
      */
