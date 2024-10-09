@@ -29,8 +29,6 @@
                     </h3>
                     <p class="text-gray-700">Email: {{ $driver->email }}</p>
                     <p class="text-gray-700">Telefoon: {{ $driver->phone }}</p>
-                    <p class="text-gray-700">Auto: {{ $driver->car }}</p>
-                    <p class="text-gray-700">Kenteken: {{ $driver->license_plate }}</p>
                     <form action="{{ route('ride.accepttaxi') }}" method="post" class="mt-4">
                         @csrf
                         <input type="hidden" name="driver_id" value="{{ $driver->id }}">

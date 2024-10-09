@@ -1,11 +1,11 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="text-xl font-semibold leading-tight text-gray-900">
-            {{ __('Ride Details for Ride #' . session('ride_id')) }}
+            {{ __('Taxi einde') }}
         </h2>
     </x-slot>
-
-    <section class="mx-auto max-w-2xl px-6 py-12 lg:px-8">
+    <section class="relative flex h-screen items-center justify-center bg-cover bg-center"
+        style="background-image: url('{{ asset('images/ride_complete.png') }}'); background-size: contain; background-repeat: no-repeat;">
         <div class="space-y-6 rounded-lg bg-white p-8 shadow-lg">
             <div class="space-y-4">
                 <h3 class="text-lg font-semibold text-gray-800">Ride Information</h3>
@@ -32,8 +32,8 @@
                     minuten</p>
             </div>
             <div class="space-y-4">
-                <a href="{{ route('ride.endpoint', $ride->id) }}" class="rounded-lg bg-green-500 p-4 text-white">
-                    <button>Einde route</button>
+                <a href="{{ route('ride.create') }}" class="rounded-lg bg-green-500 p-4 text-white">
+                    <button>Nieuwe route zoeken</button>
                 </a>
             </div>
         </div>

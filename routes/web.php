@@ -17,6 +17,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('ride', RideController::class)->middleware(['auth']);
     Route::post('ride/location', [RideController::class, 'location'])->name('ride.location');
     Route::post('ride/acceptTaxi', [RideController::class, 'acceptTaxi'])->name('ride.accepttaxi');
+    Route::get('endpoint/{taxi}', [RideController::class, 'endPoint'])->name('ride.endpoint');
 });
 
 Route::get('/dashboard', function () {

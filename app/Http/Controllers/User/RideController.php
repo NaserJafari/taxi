@@ -21,6 +21,15 @@ class RideController extends Controller
         return view('user.rides.index');
     }
 
+    public function endPoint(string $id)
+    {
+        $ride = Rides::findOrFail($id);
+        $ride->status_id = 3;
+        $ride->save();
+
+        return view('user.rides.endpoint', compact('ride'));
+    }
+
     public function searchTaxi(Request $request)
     {
         $drivers = Driver::all();
