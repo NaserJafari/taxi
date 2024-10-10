@@ -26,9 +26,9 @@
             </div>
 
             <div class="space-y-4">
-                <h3 class="text-lg font-semibold text-gray-800">Estimates</h3>
-                <p><span class="font-semibold text-gray-600">Geschatte Kosten:</span> €{{ $ride->estimate_cost }}</p>
-                <p><span class="font-semibold text-gray-600">Geschatte Tijd:</span> {{ $ride->estimate_drive_time }}
+                <h3 class="text-lg font-semibold text-gray-800">Eindkosten</h3>
+                <p><span class="font-semibold text-gray-600">Eind kost:</span> €{{ $ride->estimate_cost }}</p>
+                <p><span class="font-semibold text-gray-600">Eind tijd:</span> {{ $ride->estimate_drive_time }}
                     minuten</p>
             </div>
             <div class="space-y-4">
